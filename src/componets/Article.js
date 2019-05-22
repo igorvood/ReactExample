@@ -7,7 +7,7 @@ function Article(props ) {
         <div>
             <h2>{article.title}</h2>
             {body}
-            <h3>creation date: {(new Date({article.date1})).toString()} </h3>
+            <h3>creation date: {(new Date()).toDateString()} </h3>
         </div>
     )
 }
