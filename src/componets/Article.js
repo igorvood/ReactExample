@@ -13,7 +13,12 @@ class Article extends Component {
         console.log('---', 'mounting')
     }
 
+    componentWillUpdate(nextProps, nextState, nextContext) {
+        console.log('---', 'componentWillUpdate')
+    }
+
     componentWillReceiveProps(nextProps) {
+        console.log('---', 'componentWillReceiveProps')
         if (nextProps.defaultOpen !== this.props.defaultOpen)
             this.setState({
                 isOpen: nextProps.defaultOpen
