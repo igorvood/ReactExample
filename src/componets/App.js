@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import ArticleList from "./ArticleList";
 import articles from "../fixtures"
 import 'bootstrap/dist/css/bootstrap.css'
+import GetRequestButton from "./GetRequestButton/GetRequestButton";
+import PostRequestButton from "./PostRequest/PostRequestButton";
 
 class App extends Component {
     state = {
@@ -11,6 +13,8 @@ class App extends Component {
     render() {
         return (
             <div className="container">
+                <GetRequestButton/>
+                <PostRequestButton/>
                 <div className="jumbotron">
                     <h1 className="display-3">
                         App name
